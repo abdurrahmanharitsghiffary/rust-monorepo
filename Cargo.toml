@@ -1,0 +1,16 @@
+
+[workspace]
+resolver = '2'
+members = [
+	'libs/rabbitmq_libs',
+	'libs/redis_libs',
+	'libs/kafka_libs',
+	'libs/pgsql_libs',
+	'libs/proto_libs',
+	'libs/config_libs',
+	'libs/logger_libs',
+	'apps/apps_test'
+]
+
+[profile.release]
+lto = true
